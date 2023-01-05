@@ -4,7 +4,7 @@ sidebar_position: 1
 
 # Intro
 
-Let's discover **Polinetwork's Infrastructure in less than 5 minutes**.
+Let's discover **PoliNetwork's Infrastructure in less than 5 minutes**.
 
 ## Getting Started
 
