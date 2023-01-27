@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpolinetworkdocs=self.webpackChunkpolinetworkdocs||[]).push([[359],{2086:e=>{e.exports=JSON.parse('{"title":"Infra","slug":"/category/infra","permalink":"/docs/category/infra","navigation":{"previous":{"title":"Features App (in ordine di priorita\')","permalink":"/docs/app/features"},"next":{"title":"Intro","permalink":"/docs/Infra/intro"}}}')}}]);

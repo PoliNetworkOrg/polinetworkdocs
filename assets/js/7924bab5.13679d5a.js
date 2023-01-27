@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkpolinetworkdocs=self.webpackChunkpolinetworkdocs||[]).push([[484],{1718:e=>{e.exports=JSON.parse('{"title":"Pipelines","slug":"/category/pipelines","permalink":"/docs/category/pipelines","navigation":{"previous":{"title":"Intro","permalink":"/docs/Infra/intro"},"next":{"title":"ci","permalink":"/docs/Infra/pipelines/ci"}}}')}}]);
