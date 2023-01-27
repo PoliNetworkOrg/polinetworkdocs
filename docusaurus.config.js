@@ -67,6 +67,12 @@ const config = {
             label: 'Docs',
           },
           {
+            type: 'docSidebar',
+            position: 'left',
+            sidebarId: 'infra',
+            label: 'Infra',
+          },
+          {
             href: 'https://github.com/facebook/docusaurus',
             label: 'GitHub',
             position: 'right',
