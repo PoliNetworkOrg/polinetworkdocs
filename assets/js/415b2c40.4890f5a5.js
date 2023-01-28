@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkpolinetworkdocs=self.webpackChunkpolinetworkdocs||[]).push([[848],{3639:s=>{s.exports=JSON.parse('{"title":"K8s Basics","slug":"/category/k8s-basics-1","permalink":"/docs/category/k8s-basics-1","navigation":{"previous":{"title":"cd","permalink":"/docs/Infra/pipelines/cd"},"next":{"title":"intro","permalink":"/docs/Infra/k8s-basics/intro"}}}')}}]);
