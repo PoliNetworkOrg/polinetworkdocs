@@ -25,7 +25,8 @@ The possible values of ```<namespace>``` may vary depending on the project you'r
 :::
 
 :::danger
-Starting from Kubectl v1.26, the Azure auth plugin has been removed. If you're using a new version, you'll need to install and run [kubelogin](https://github.com/Azure/kubelogin#setup). Then run ```kubectl get pods -n <namespace>``` again.\
+Starting from Kubectl v1.26, the Azure auth plugin has been removed. If you're using a new version, you'll need to install and run [kubelogin](https://github.com/Azure/kubelogin#setup). Then run ```kubectl get pods -n <namespace>``` again.
+
 For now as there is no install instruction on the kubelogin repo for linux, download the latest release for your computer architecture from [here](https://github.com/Azure/kubelogin/releases), unzip it and run it with `./kubelogin convert-kubeconfig`. Follow the indicated steps
 :::
 
