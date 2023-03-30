@@ -16,7 +16,11 @@ This tutorial assumes your account has the right permissions to access the infra
 
 - Run ```az login``` to login.
 
+- Run ```sudo az aks install-cli``` to install kubectl
+
 - Run ```az aks get-credentials --resource-group rg-polinetwork --name aks-polinetwork``` to configure Kubectl.
+
+- Run ```kubelogin convert-kubeconfig``` if you have installed Kubectl > v1.26
 
 - To check if everything is working, run ```kubectl get pods -n <namespace>```. You should see a list of pods.
 
@@ -25,7 +29,7 @@ The possible values of ```<namespace>``` may vary depending on the project you'r
 :::
 
 :::danger
-Starting from Kubectl v1.26, the Azure auth plugin has been removed. If you're using a new version, you'll need to install Kubectl and Kubelogin by running ```sudo az aks install-cli```. Then run ```kubectl get pods -n <namespace>``` again.
+Starting from Kubectl v1.26, the Azure auth plugin has been removed. If you're using a new version, you'll need to install Kubectl and Kubelogin. Then run ```kubectl get pods -n <namespace>``` again.
 
 For now as there is no install instruction on the kubelogin repo for linux, download the latest release for your computer architecture from [here](https://github.com/Azure/kubelogin/releases), unzip it and run it with `./kubelogin convert-kubeconfig`. Follow the indicated steps
 :::
