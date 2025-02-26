@@ -73,7 +73,7 @@ const config = {
             label: 'Infra',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/facebook/docusaurus/tree/master',
             label: 'GitHub',
             position: 'right',
           },
