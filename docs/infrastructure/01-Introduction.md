@@ -26,5 +26,5 @@ AKS gives us the flexibility of a 10s pod deployment, reliability (with ArgoCD e
 
 The best place to start is going through the [Tutorials](./Tutorials/setup) section to get a high level overview of how things are organized.
 
-If you're looking for a guide on how to achieve a specific outcome, you can look in the [How To Guides](./How%20To%20Guides/Adding%20a%20Secret).
+If you're looking for a guide on how to achieve a specific outcome, you can look in the [Guides](./Guides/Adding%20a%20Secret).
   
