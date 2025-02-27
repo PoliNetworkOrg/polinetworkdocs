@@ -6,7 +6,7 @@ import type * as Preset from '@docusaurus/preset-classic'
 
 const config: Config = {
   title: 'PoliNetwork Docs',
-  tagline: 'Technical documentation for PoliNetwork',
+  tagline: 'Technical Documentation for PoliNetwork',
   favicon: 'img/favicon.ico',
 
   url: 'https://docs.polinetwork.org',
@@ -51,19 +51,19 @@ const config: Config = {
       },
       items: [
         {
-          type: 'doc',
-          docId: 'intro',
+          type: 'docSidebar',
           position: 'left',
-          label: 'Docs',
+          sidebarId: 'infra',
+          label: 'Infrastructure',
         },
         {
           type: 'docSidebar',
           position: 'left',
-          sidebarId: 'infra',
-          label: 'Infra',
+          sidebarId: 'polifemo',
+          label: 'Polifemo (deprecated)',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/polinetworkorg/polinetworkdocs',
           label: 'GitHub',
           position: 'right',
         },
@@ -90,12 +90,18 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/polinetworkorg/polinetworkdocs', // Completed the GitHub link
+              href: 'https://github.com/polinetworkorg', // Completed the GitHub link
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} PoliNetwork APS - Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} PoliNetwork APS - Built with Docusaurus`,
+      logo: {
+        src: 'img/logo.svg',
+        alt: 'PoliNetwork Logo',
+        href: 'https://polinetwork.org',
+        height: '100px',
+      },
     },
     prism: {
       theme: prismThemes.github,

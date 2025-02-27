@@ -2,6 +2,7 @@
 sidebar_position: 2
 ---
 # Setup
+
 If it's your first time accessing the infrastructure, you'll need to setup the tools and configure them.
 
 :::caution
@@ -34,22 +35,25 @@ Starting from Kubectl v1.26, the Azure auth plugin has been removed. If you're u
 For now as there is no install instruction on the kubelogin repo for linux, download the latest release for your computer architecture from [here](https://github.com/Azure/kubelogin/releases), unzip it and run it with `./kubelogin convert-kubeconfig`. Follow the indicated steps
 :::
 
-
 ## Port Forwarding
+
 To access services running on the cluster (such as the MariaDB database), you'll need to forward the correct ports. To do so, we need the correct pod name.
 
 - Run ```kubectl get pods -n <namespace>``` to get the pod name. The pod name is listed under the ```NAME``` column.
 
 - Run ```kubectl port-forward <pod-name> <local-port>:<remote-port> -n <namespace>```  
 For example, if you want to access the MariaDB database, you'll need to run
-```
+
+```sh
 kubectl port-forward <pod-name> 3306:3306 -n <namespace>
 ```
 
 :::tip
 If you're using the MariaDB database, you can use the following command to get the pod name and forward the port in one go:  
-```
+
+```sh
 PODNAME=$(kubectl get pods --no-headers -n mariadb -o custom-columns=":metadata.name" | tail -1); kubectl port-forward -n mariadb $PODNAME 3306:3306
 ```
+
 You can use the same template to connect to other services.
 :::
