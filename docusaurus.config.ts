@@ -5,6 +5,19 @@ import type * as Preset from '@docusaurus/preset-classic'
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
+  // "engine" config
+  future: {
+    experimental_faster: {
+      swcJsLoader: true,
+      swcJsMinimizer: true,
+      swcHtmlMinimizer: true,
+      lightningCssMinimizer: true,
+      rspackBundler: true,
+      mdxCrossCompilerCache: true,
+    },
+  },
+
+  // Website config
   title: 'PoliNetwork Docs',
   tagline: 'Technical Documentation for PoliNetwork',
   favicon: 'img/favicon.ico',
