@@ -3,6 +3,10 @@ import clsx from 'clsx'
 import Heading from '@theme/Heading'
 import styles from './styles.module.css'
 
+import logo from '@site/static/img/logo.svg'
+import azure from '@site/static/img/azure.svg'
+import opensource from '@site/static/img/oss.svg'
+
 type FeatureItem = {
   title: string
   Svg: React.ComponentType<React.ComponentProps<'svg'>>
@@ -11,32 +15,49 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Powered by Azure',
+    Svg: azure,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        We run all our services on Microsoft Azure, thanks to the Microsoft
+        Sponsorship for Nonprofits.{' '}
+        <a href="https://nonprofit.microsoft.com/it-it" target="_blank">
+          Learn more
+        </a>
+        .
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: '100% Open Source',
+    Svg: opensource,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        We are very serious about Open Source. All our projects are fully open
+        source and available on GitHub. Freedom of information is a core value
+        for us, we even wrote it in our{' '}
+        <a
+          href="https://raw.githubusercontent.com/PoliNetworkOrg/Statuto/document/Document.pdf"
+          target="_blank"
+        >
+          Statute
+        </a>
+        , and this will never change.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'By Students, For Students',
+    Svg: logo,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        PoliNetwork is a student association, and we are all students. Our main
+        goal is to improve campus life and empower students communications. If
+        you want to contribute to our vision, join us on{' '}
+        <a href="https://t.me/+C2Qb3SVo5qQwMzRk" target="_blank">
+          Telegram
+        </a>
+        !
       </>
     ),
   },

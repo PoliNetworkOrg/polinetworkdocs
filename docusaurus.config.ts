@@ -46,7 +46,7 @@ const config: Config = {
       title: 'PoliNetwork Docs',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -75,8 +75,16 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'Infrastructure',
+              to: '/docs/infrastructure/Introduction',
+            },
+            {
+              label: 'Polifemo (deprecated)',
+              to: '/docs/app',
             },
           ],
         },
@@ -93,10 +101,27 @@ const config: Config = {
             },
           ],
         },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Main Telegram Group',
+              href: 'https://t.me/poligruppo',
+            },
+            {
+              label: 'Projects Telegram Group',
+              href: 'https://t.me/+C2Qb3SVo5qQwMzRk',
+            },
+            {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/polinetwork_/',
+            },
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} PoliNetwork APS - Built with Docusaurus`,
       logo: {
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
         alt: 'PoliNetwork Logo',
         href: 'https://polinetwork.org',
         height: '100px',

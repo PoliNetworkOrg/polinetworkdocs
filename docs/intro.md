@@ -11,7 +11,7 @@ We run our infrastructure on Azure (paid with the
 [Microsoft Azure Sponsorship](https://www.microsoftazuresponsorships.com/))
 
 If you want to learn how it works and how to add new services, check out the
-[Infrastructure](/docs/infra/intro) section.
+[Infrastructure](/docs/infrastructure/Introduction) section.
 
 ## Polifemo
 
