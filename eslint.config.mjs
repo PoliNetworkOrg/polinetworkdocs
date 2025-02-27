@@ -12,10 +12,5 @@ export default [
   ...tseslint.configs.recommended,
   pluginReact.configs.flat['jsx-runtime'],
   prettier,
-  {
-    rules: {
-      '@typescript-eslint/no-require-imports': 'off', // for requiring svgs
-    },
-  },
   { ignores: ['**/.docusaurus/**'] },
 ]

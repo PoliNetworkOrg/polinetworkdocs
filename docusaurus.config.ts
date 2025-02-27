@@ -6,13 +6,13 @@ import type * as Preset from '@docusaurus/preset-classic'
 
 const config: Config = {
   title: 'PoliNetwork Docs',
-  tagline: 'Technical documentation for PoliNetwork',
+  tagline: 'Technical Documentation for PoliNetwork',
   favicon: 'img/favicon.ico',
 
   url: 'https://docs.polinetwork.org',
   baseUrl: '/',
   organizationName: 'polinetworkorg',
-  projectName: 'polinetworkdocs',
+  projectName: 'docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -30,8 +30,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/polinetworkorg/polinetworkdocs/tree/main',
+          editUrl: 'https://github.com/polinetworkorg/docs/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -47,23 +46,23 @@ const config: Config = {
       title: 'PoliNetwork Docs',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
-        {
-          type: 'doc',
-          docId: 'intro',
-          position: 'left',
-          label: 'Docs',
-        },
         {
           type: 'docSidebar',
           position: 'left',
           sidebarId: 'infra',
-          label: 'Infra',
+          label: 'Infrastructure',
         },
         {
-          href: 'https://github.com/facebook/docusaurus',
+          type: 'docSidebar',
+          position: 'left',
+          sidebarId: 'polifemo',
+          label: 'Polifemo (deprecated)',
+        },
+        {
+          href: 'https://github.com/polinetworkorg/docs',
           label: 'GitHub',
           position: 'right',
         },
@@ -76,8 +75,16 @@ const config: Config = {
           title: 'Docs',
           items: [
             {
-              label: 'Tutorial',
+              label: 'Introduction',
               to: '/docs/intro',
+            },
+            {
+              label: 'Infrastructure',
+              to: '/docs/infrastructure/Introduction',
+            },
+            {
+              label: 'Polifemo (deprecated)',
+              to: '/docs/app',
             },
           ],
         },
@@ -90,12 +97,35 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/polinetworkorg/polinetworkdocs', // Completed the GitHub link
+              href: 'https://github.com/polinetworkorg', // Completed the GitHub link
+            },
+          ],
+        },
+        {
+          title: 'Community',
+          items: [
+            {
+              label: 'Main Telegram Group',
+              href: 'https://t.me/poligruppo',
+            },
+            {
+              label: 'Projects Telegram Group',
+              href: 'https://t.me/+C2Qb3SVo5qQwMzRk',
+            },
+            {
+              label: 'Instagram',
+              href: 'https://www.instagram.com/polinetwork_/',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} PoliNetwork APS - Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} PoliNetwork APS - Built with Docusaurus`,
+      logo: {
+        src: 'img/logo.png',
+        alt: 'PoliNetwork Logo',
+        href: 'https://polinetwork.org',
+        height: '100px',
+      },
     },
     prism: {
       theme: prismThemes.github,
