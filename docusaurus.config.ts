@@ -12,7 +12,7 @@ const config: Config = {
   url: 'https://docs.polinetwork.org',
   baseUrl: '/',
   organizationName: 'polinetworkorg',
-  projectName: 'polinetworkdocs',
+  projectName: 'docs',
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -30,8 +30,7 @@ const config: Config = {
           sidebarPath: './sidebars.ts',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/polinetworkorg/polinetworkdocs/tree/main',
+          editUrl: 'https://github.com/polinetworkorg/docs/tree/main',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -63,7 +62,7 @@ const config: Config = {
           label: 'Polifemo (deprecated)',
         },
         {
-          href: 'https://github.com/polinetworkorg/polinetworkdocs',
+          href: 'https://github.com/polinetworkorg/docs',
           label: 'GitHub',
           position: 'right',
         },
